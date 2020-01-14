@@ -1,0 +1,11 @@
+server:
+  port: 8902
+spring:
+  application:
+    name: consumer
+  main:
+    allow-bean-definition-overriding: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://注册中心ip地址/EurekaServer/eureka/

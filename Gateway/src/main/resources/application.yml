@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: eat-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://39.105.189.141/EurekaServer/eureka/
+zuul:
+  routes:  #路由
+    delicious: #名称自定义
+      path: /delicious/** #外界访问服务的名称
+      service-id: eat-consumer #服务的名称 一般指服务消费者的名称
+
+

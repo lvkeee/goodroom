@@ -1,0 +1,24 @@
+server:
+  port: 8901
+spring:
+  application:
+    name: provider
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://39.106.147.162:3306/catering?serverTimezone=UTC #数据库，IP 端口 需要是自己的
+    username: root #数据库名字
+    password: root #数据库密码
+    type: com.alibaba.druid.pool.DruidDataSource #这里使用的是druid
+eureka:
+  client:
+    service-url:
+      defaultZone: http://IP地址/EurekaServer/eureka/
+
+#熔断器的时间设置
+hystrix:
+  commoned:
+    default:
+      excution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
