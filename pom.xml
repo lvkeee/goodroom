@@ -34,7 +34,7 @@
         <fastjson.version>1.2.58</fastjson.version>
         <aliyunsms.version>4.1.0</aliyunsms.version>
         <aliyumoss.version>3.8.0</aliyumoss.version>
-        <fileupload.version>1.4</fileupload.version>
+        <fileupload.version>1.5</fileupload.version>
         <jackson.version>2.10.1</jackson.version>
         <jjwt.version>0.9.1</jjwt.version>
         <jwt.version>3.8.1</jwt.version>
